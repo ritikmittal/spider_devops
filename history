@@ -1,0 +1,56 @@
+  mkdir Devops_T1
+  cd Devops_T1
+  git init
+  git add .
+  git commit -m "Initial commit"
+  touch first_file.txt
+  open first_file.txt
+  git add .
+  git commit -m "Initial commit"
+  git status
+  git log
+  cd ../
+  rm -r Devops_T1
+  y
+  ls
+  mkdir Devops_T1
+  cd Devops_T1
+  touch commit1_master.txt
+  open commit1_master.txt
+  git add .
+  git init
+  git add .
+  git commit -m "Initial commit"
+  git branch Develop
+  git checkout Develop
+  touch commit1_Develop.txt
+  open commit1_Develop.txt
+  git add .
+  git commit -m "1st commit from Develop branch"
+  git checkout master
+  touch commit2_master.txt
+  open commit2_master.txt
+  git add .
+  git commit -m "2nd commit to master branch"
+  git log
+  git merge Develop
+  git branch
+  git branch spider
+  git checkout spider
+  touch content.txt
+  open co
+  open content.txt
+  git add .
+  git commit -m "content added"
+  touch commit2_spider.txt
+  open commit2_spider.txt
+  mv content.txt commit1_spider.txt
+  git add .
+  git status
+  git commit -m "2nd commit to spider branch"
+  git checkout master
+  git merge spider
+  git branch -d spider
+  git branch -d Develop
+  git remote add origin https://github.com/ritikmittal/spider_devops.git
+  git push -u origin master
